@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معضل | Mo'adlal - كوتشينج أونلاين وتدريب شخصي</title>
+    
+    <!-- Meta tags for Search Engine Optimization (SEO) -->
+    <meta name="description" content="منصة معضل (Mo'adlal) للتدريب الأونلاين والتغذية الرياضية. أنظمة تمارين ونظام غذائي مخصص للتنشيف والضخامة بأفضل الأسعار في مصر.">
+    <meta name="keywords" content="معضل, كوتشينج اونلاين, تدريب شخصي, جدول تمارين, نظام غذائي, حاسبة السعرات, جيم, كمال اجسام, fitness coach, bodybuilding">
+    <meta name="robots" content="index, follow">
+
+    <!-- Google Fonts: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0a0a0a',
+                            card: '#121212',
+                            green: '#00ff66',
+                            greenHover: '#00cc52',
+                        }
+                    },
+                    animation: {
+                        'float-slow': 'float 6s ease-in-out infinite',
+                        'float-delayed': 'float 6s ease-in-out 3s infinite',
+                        'pulse-glow': 'pulseGlow 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-12px)' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { opacity: '0.35' },
+                            '50%': { opacity: '0.65' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            font-family: 'Cairo', sans-serif;
+            overflow-x: hidden;
+        }
+        .neon-glow {
+            box-shadow: 0 0 25px rgba(0, 255, 102, 0.18);
+        }
+        .neon-text-glow {
+            text-shadow: 0 0 20px rgba(0, 255, 102, 0.45);
+        }
+        .athlete-blend {
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+        }
+        .athlete-shadow {
+            filter: drop-shadow(0 0 28px rgba(0, 255, 102, 0.22));
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-white antialiased selection:bg-brand-green selection:text-black">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-gray-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#home" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-2xl bg-brand-green flex items-center justify-center text-gray-950 font-black text-xl shadow-lg shadow-brand-green/30 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-dumbbell -rotate-45"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-black tracking-tight text-white">مُعَضِّلْ</span>
+                    <span class="block text-[10px] font-bold text-brand-green tracking-widest uppercase -mt-1">MO'ADLAL COACHING</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 font-bold text-gray-300">
+                <a href="#home" class="hover:text-brand-green transition-colors">الرئيسية</a>
+                <a href="#video-section" class="hover:text-brand-green transition-colors">عن الكوتش</a>
+                <a href="#services" class="hover:text-brand-green transition-colors">المميزات</a>
+                <a href="#calculator" class="hover:text-brand-green transition-colors flex items-center gap-1 text-brand-green">
+                    <i class="fa-solid fa-calculator text-xs"></i> حاسبة السعرات
+                </a>
+                <a href="#plans" class="hover:text-brand-green transition-colors">الباقات والأسعار</a>
+            </nav>
+
+            <!-- Top Contact Number & CTA -->
+            <div class="flex items-center gap-2 sm:gap-4">
+                <a href="https://wa.me/201096363827?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D9%83%D8%A7%D8%A8%D8%AA%D9%86%D8%8C%20%D8%B9%D9%86%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center bg-gray-900/95 hover:bg-gray-800 border-2 border-brand-green/50 hover:border-brand-green px-3.5 sm:px-5 py-1.5 rounded-2xl transition-all group shadow-lg shadow-brand-green/15">
+                    <span class="text-brand-green font-black text-sm sm:text-lg tracking-wider flex items-center gap-1.5" dir="ltr">
+                        <i class="fa-brands fa-whatsapp text-base sm:text-lg group-hover:scale-110 transition-transform"></i>
+                        01096363827
+                    </span>
+                    <span class="text-[11px] sm:text-xs font-extrabold text-white mt-0.5">للاستفسار عن أي شيء</span>
+                </a>
+
+                <a href="#plans" class="hidden lg:inline-block bg-brand-green hover:bg-brand-greenHover text-gray-950 font-black px-5 py-2.5 rounded-xl transition-all shadow-lg shadow-brand-green/20 text-sm">
+                    ابدأ التحول الآن
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" aria-label="القائمة" class="md:hidden p-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-300 hover:text-brand-green">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-950 border-b border-gray-800 px-4 pt-2 pb-6 space-y-3 font-semibold text-center">
+            <a href="#home" class="block py-2.5 hover:bg-gray-900 rounded-xl">الرئيسية</a>
+            <a href="#video-section" class="block py-2.5 hover:bg-gray-900 rounded-xl">عن الكوتش</a>
+            <a href="#services" class="block py-2.5 hover:bg-gray-900 rounded-xl">المميزات</a>
+            <a href="#calculator" class="block py-2.5 text-brand-green font-bold hover:bg-gray-900 rounded-xl">حاسبة السعرات</a>
+            <a href="#plans" class="block py-2.5 hover:bg-gray-900 rounded-xl">الباقات والأسعار</a>
+            <a href="https://wa.me/201096363827?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D9%83%D8%A7%D8%A8%D8%AA%D9%86%D8%8C%20%D8%B9%D9%86%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A3%D9%8A%20%D8%B4%D9%8A%D8%A1" target="_blank" rel="noopener noreferrer" class="block w-full bg-brand-green text-gray-950 py-3 rounded-xl font-black mt-2">
+                01096363827 - للاستفسار عن أي شيء
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section with Flanking Muscular Athletes -->
+    <section id="home" class="relative pt-10 pb-20 md:pt-16 md:pb-28 overflow-hidden border-b border-gray-800/80">
+        <!-- Ambient Neon Background Orbs -->
+        <div class="absolute top-16 right-10 w-80 h-80 bg-brand-green/15 rounded-full blur-[130px] pointer-events-none animate-pulse-glow"></div>
+        <div class="absolute top-24 left-10 w-80 h-80 bg-brand-green/15 rounded-full blur-[130px] pointer-events-none animate-pulse-glow"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- 3-Column Layout on Desktop: Right Athlete | Center Content | Left Athlete -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Right Side Muscular Athlete (Desktop Flanking) -->
+                <div class="hidden lg:flex lg:col-span-3 justify-center items-end relative group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-green/20 via-transparent to-transparent rounded-3xl blur-2xl group-hover:from-brand-green/35 transition-all duration-500"></div>
+                    <div class="relative w-full h-[460px] rounded-3xl overflow-hidden border border-gray-800/80 bg-gray-950/60 shadow-2xl athlete-shadow animate-float-slow">
+                        <img 
+                            src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=85" 
+                            alt="بطل كمال أجسام معضل - تدريب القوة" 
+                            onerror="this.src='https://placehold.co/600x800/121212/00ff66?text=MOADLAL+PRO'"
+                            class="w-full h-full object-cover object-top scale-105 group-hover:scale-110 transition-transform duration-700 brightness-95 contrast-110 athlete-blend"
+                        >
+                        <!-- Dark Edge Blending & Subtle Tag -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"></div>
+                        <div class="absolute bottom-4 right-4 left-4 bg-black/75 backdrop-blur-md border border-brand-green/30 rounded-2xl p-3 text-center">
+                            <span class="text-brand-green font-black text-xs block">ضخامة عضلية صافية</span>
+                            <span class="text-gray-300 text-[11px]">برامج علمية لزيادة الكتلة</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center Hero Text & CTAs -->
+                <div class="lg:col-span-6 text-center space-y-7 py-4">
+                    <div class="inline-flex items-center gap-2 bg-gray-900/90 border border-brand-green/30 px-4 py-2 rounded-full text-xs sm:text-sm font-bold text-brand-green shadow-lg">
+                        <span class="w-2.5 h-2.5 rounded-full bg-brand-green animate-ping"></span>
+                        <span>تدريب أونلاين احترافي 100% مخصص لهدفك</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl xl:text-6xl font-black leading-tight text-white">
+                        ابنِ فورمة أحلامك مع
+                        <span class="text-brand-green neon-text-glow block mt-2">مُعَضِّلْ كوتشينج</span>
+                    </h1>
+
+                    <p class="text-gray-300 text-base sm:text-lg max-w-xl mx-auto leading-relaxed font-medium">
+                        سواء كان هدفك التنشيف وحرق الدهون، أو الضخامة وبناء كتلة عضلية قوية — هنصمملك نظام تدريبي وغذائي مفصّل على مقاسك وبمتابعة مستمرة بأفضل سعر في مصر.
+                    </p>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+                        <a href="#plans" class="w-full sm:w-auto px-8 py-4 bg-brand-green hover:bg-brand-greenHover text-gray-950 font-black rounded-2xl text-lg transition-all shadow-xl shadow-brand-green/25 flex items-center justify-center gap-2">
+                            <span>اختر باقتك الآن</span>
+                            <i class="fa-solid fa-arrow-left text-sm"></i>
+                        </a>
+                        <a href="#calculator" class="w-full sm:w-auto px-8 py-4 bg-gray-900 hover:bg-gray-800 border border-gray-700 hover:border-brand-green/50 text-white font-bold rounded-2xl text-lg transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-fire text-brand-green"></i>
+                            <span>احسب سعراتك مجاناً</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Stats Bar -->
+                    <div class="grid grid-cols-3 gap-3 pt-6 max-w-lg mx-auto border-t border-gray-800/80">
+                        <div class="bg-gray-900/60 rounded-2xl p-3 border border-gray-800/80">
+                            <span class="text-xl sm:text-2xl font-black text-brand-green block">100%</span>
+                            <span class="text-[11px] sm:text-xs text-gray-400 font-bold">أنظمة مخصصة</span>
+                        </div>
+                        <div class="bg-gray-900/60 rounded-2xl p-3 border border-gray-800/80">
+                            <span class="text-xl sm:text-2xl font-black text-white block">24/7</span>
+                            <span class="text-[11px] sm:text-xs text-gray-400 font-bold">دعم ومتابعة</span>
+                        </div>
+                        <div class="bg-gray-900/60 rounded-2xl p-3 border border-gray-800/80">
+                            <span class="text-xl sm:text-2xl font-black text-brand-green block">+500</span>
+                            <span class="text-[11px] sm:text-xs text-gray-400 font-bold">قصة نجاح</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left Side Muscular Athlete (Desktop Flanking) -->
+                <div class="hidden lg:flex lg:col-span-3 justify-center items-end relative group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-green/20 via-transparent to-transparent rounded-3xl blur-2xl group-hover:from-brand-green/35 transition-all duration-500"></div>
+                    <div class="relative w-full h-[460px] rounded-3xl overflow-hidden border border-gray-800/80 bg-gray-950/60 shadow-2xl athlete-shadow animate-float-delayed">
+                        <img 
+                            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=85" 
+                            alt="لاعب كمال أجسام محترف - تنشيف ولياقة" 
+                            onerror="this.src='https://placehold.co/600x800/121212/00ff66?text=SHREDDED+FITNESS'"
+                            class="w-full h-full object-cover object-center scale-105 group-hover:scale-110 transition-transform duration-700 brightness-95 contrast-110 athlete-blend"
+                        >
+                        <!-- Dark Edge Blending & Subtle Tag -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"></div>
+                        <div class="absolute bottom-4 right-4 left-4 bg-black/75 backdrop-blur-md border border-brand-green/30 rounded-2xl p-3 text-center">
+                            <span class="text-brand-green font-black text-xs block">تنشيف ونحت الجسم</span>
+                            <span class="text-gray-300 text-[11px]">أقل نسبة دهون بأعلى طاقة</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Mobile & Tablet Side-by-Side Muscular Athletes Showcase (Visible below lg) -->
+            <div class="grid grid-cols-2 gap-4 mt-10 lg:hidden">
+                <div class="relative h-60 sm:h-72 rounded-3xl overflow-hidden border border-gray-800 bg-gray-950 shadow-xl athlete-shadow">
+                    <img 
+                        src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=600&q=80" 
+                        alt="بطل كمال أجسام - ضخامة" 
+                        onerror="this.src='https://placehold.co/400x500/121212/00ff66?text=BULK'"
+                        class="w-full h-full object-cover object-top"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent"></div>
+                    <div class="absolute bottom-3 right-3 left-3 bg-black/75 backdrop-blur-sm border border-brand-green/30 rounded-xl p-2 text-center">
+                        <span class="text-brand-green font-black text-xs">ضخامة عضلية</span>
+                    </div>
+                </div>
+
+                <div class="relative h-60 sm:h-72 rounded-3xl overflow-hidden border border-gray-800 bg-gray-950 shadow-xl athlete-shadow">
+                    <img 
+                        src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" 
+                        alt="بطل كمال أجسام - تنشيف" 
+                        onerror="this.src='https://placehold.co/400x500/121212/00ff66?text=SHRED'"
+                        class="w-full h-full object-cover object-center"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent"></div>
+                    <div class="absolute bottom-3 right-3 left-3 bg-black/75 backdrop-blur-sm border border-brand-green/30 rounded-xl p-2 text-center">
+                        <span class="text-brand-green font-black text-xs">تنشيف وحرق دهون</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Introduction Section -->
+    <section id="video-section" class="py-16 bg-gray-900/60 border-b border-gray-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+            <div class="space-y-3 max-w-2xl mx-auto">
+                <span class="text-brand-green font-bold text-sm bg-brand-green/10 px-4 py-1.5 rounded-full border border-brand-green/20">رسالة ترحيبية</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white">اتعرف على طريقة التدريب مع <span class="text-brand-green">مُعَضِّلْ</span></h2>
+                <p class="text-gray-400 text-sm sm:text-base">شاهد الفيديو لمعرفة كيف سنساعدك على تحقيق أفضل نسخة من جسمك خطوة بخطوة</p>
+            </div>
+
+            <!-- Video Player Container -->
+            <div class="relative w-full max-w-3xl mx-auto aspect-video rounded-3xl overflow-hidden border-2 border-gray-800 shadow-2xl neon-glow bg-gray-950 flex items-center justify-center group">
+                <!-- يمكنك استبدال الرابط أدناه برابط فيديو يوتيوب الخاص بك لاحقاً -->
+                <iframe 
+                    class="w-full h-full rounded-2xl" 
+                    src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" 
+                    title="فيديو تعريفي - معضل كوتشينج" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Features Section -->
+    <section id="services" class="py-20 bg-brand-dark relative border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-green font-bold text-sm uppercase tracking-wider">لماذا تختار معضل؟</span>
+                <h2 class="text-3xl sm:text-5xl font-black text-white">نظام مصمم خصيصاً لنتائجك</h2>
+                <p class="text-gray-400">وداعاً للأنظمة العشوائية والمجانية غير المناسبة لطبيعة جسمك</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-brand-card border border-gray-800 hover:border-brand-green/50 p-8 rounded-3xl transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-green/10 text-brand-green flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-green group-hover:text-black transition-colors">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <h3 class="text-xl font-black text-white mb-3">جدول تمارين علمي</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        تصميم جدول تمارين يناسب أيام فراغك، سواء بتتمرن في الجيم أو في البيت، مع تحديد المجموعات والتكرارات وأوقات الراحة بدقة.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-brand-card border border-gray-800 hover:border-brand-green/50 p-8 rounded-3xl transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-green/10 text-brand-green flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-green group-hover:text-black transition-colors">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-black text-white mb-3">نظام غذائي مرن واقتصادي</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        نظام غذائي محسوب السعرات والماكروز من الأكل المتاح في بيتك وبدون حرمان، مع بدائل متعددة لكل وجبة عشان متزهقش.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-brand-card border border-gray-800 hover:border-brand-green/50 p-8 rounded-3xl transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-green/10 text-brand-green flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-green group-hover:text-black transition-colors">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h3 class="text-xl font-black text-white mb-3">متابعة وتصحيح الأداء</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        تقييم أسبوعي لتطور وزنك ومقاساتك، وتصحيح تكنيك التمارين بالفيديو لتجنب الإصابات وتحقيق أقصى استفادة عضلية.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Calorie & Macros Calculator -->
+    <section id="calculator" class="py-20 bg-gray-900/40 border-b border-gray-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+                <span class="text-brand-green font-bold text-sm bg-brand-green/10 px-4 py-1.5 rounded-full border border-brand-green/20">أداة مجانية</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white">حاسبة السعرات والماكروز الذكية</h2>
+                <p class="text-gray-400 text-sm">اعرف احتياج جسمك اليومي من السعرات والبروتين والكارب والدهون في ثواني</p>
+            </div>
+
+            <div class="bg-brand-card border border-gray-800 rounded-3xl p-6 sm:p-10 shadow-2xl">
+                <form id="calc-form" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Gender -->
+                    <div>
+                        <label class="block text-sm font-bold text-gray-300 mb-2">النوع</label>
+                        <select id="gender" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:border-brand-green focus:outline-none">
+                            <option value="male">ذكر</option>
+                            <option value="female">أنثى</option>
+                        </select>
+                    </div>
+
+                    <!-- Age -->
+                    <div>
+                        <label class="block text-sm font-bold text-gray-300 mb-2">السن (سنة)</label>
+                        <input type="number" id="age" min="14" max="80" value="24" required class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:border-brand-green focus:outline-none">
+                    </div>
+
+                    <!-- Weight -->
+                    <div>
+                        <label class="block text-sm font-bold text-gray-300 mb-2">الوزن الحالي (كجم)</label>
+                        <input type="number" id="weight" min="35" max="250" value="78" required class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:border-brand-green focus:outline-none">
+                    </div>
+
+                    <!-- Height -->
+                    <div>
+                        <label class="block text-sm font-bold text-gray-300 mb-2">الطول (سم)</label>
+                        <input type="number" id="height" min="120" max="230" value="176" required class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:border-brand-green focus:outline-none">
+                    </div>
+
+                    <!-- Activity Level -->
+                    <div>
+                        <label class="block text-sm font-bold text-gray-300 mb-2">مستوى النشاط اليومي</label>
+                        <select id="activity" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:border-brand-green focus:outline-none">
+                            <option value="1.2">خامل (بدون تمرين)</option>
+                            <option value="1.375">نشاط خفيف (تمرين 1-3 أيام)</option>
+                            <option value="1.55" selected>نشاط متوسط (تمرين 3-5 أيام)</option>
+                            <option value="1.725">نشاط عالي (تمرين 6-7 أيام)</option>
+                        </select>
+                    </div>
+
+                    <!-- Goal -->
+                    <div>
+                        <label class="block text-sm font-bold text-gray-300 mb-2">هدفك الحالي</label>
+                        <select id="goal" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:border-brand-green focus:outline-none">
+                            <option value="cut">تنشيف وحرق دهون (-500 سعرة)</option>
+                            <option value="maintain">ثبات الوزن وتحسين الشكل</option>
+                            <option value="bulk">ضخامة عضلية وزيادة وزن (+400 سعرة)</option>
+                        </select>
+                    </div>
+
+                    <div class="md:col-span-2 pt-2">
+                        <button type="submit" class="w-full bg-brand-green hover:bg-brand-greenHover text-gray-950 font-black py-4 rounded-2xl text-lg transition-all shadow-lg shadow-brand-green/20">
+                            احسب احتياجي الآن
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Calculator Results Box -->
+                <div id="calc-result" class="hidden mt-8 pt-8 border-t border-gray-800">
+                    <h3 class="text-center text-lg font-bold text-gray-300 mb-6">احتياجك اليومي المقترح لتحقيق هدفك:</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+                        <div class="bg-gray-900 border border-brand-green/40 rounded-2xl p-4">
+                            <span class="text-xs text-gray-400 block mb-1">السعرات الحرارية</span>
+                            <span id="res-calories" class="text-2xl sm:text-3xl font-black text-brand-green">0</span>
+                            <span class="text-xs text-gray-400 block">سعرة / يوم</span>
+                        </div>
+                        <div class="bg-gray-900 border border-gray-800 rounded-2xl p-4">
+                            <span class="text-xs text-gray-400 block mb-1">البروتين</span>
+                            <span id="res-protein" class="text-2xl sm:text-3xl font-black text-white">0</span>
+                            <span class="text-xs text-gray-400 block">جرام</span>
+                        </div>
+                        <div class="bg-gray-900 border border-gray-800 rounded-2xl p-4">
+                            <span class="text-xs text-gray-400 block mb-1">الكربوهيدرات</span>
+                            <span id="res-carbs" class="text-2xl sm:text-3xl font-black text-white">0</span>
+                            <span class="text-xs text-gray-400 block">جرام</span>
+                        </div>
+                        <div class="bg-gray-900 border border-gray-800 rounded-2xl p-4">
+                            <span class="text-xs text-gray-400 block mb-1">الدهون الصحية</span>
+                            <span id="res-fats" class="text-2xl sm:text-3xl font-black text-white">0</span>
+                            <span class="text-xs text-gray-400 block">جرام</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Packages Section -->
+    <section id="plans" class="py-20 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-brand-green font-bold text-sm tracking-wider uppercase">اختر الباقة المناسبة لك</h2>
+                <p class="text-3xl sm:text-5xl font-black text-white">باقات التدريب والأسعار</p>
+                <p class="text-gray-400">أسعار في المتناول لمساعدتك على بدء رحلتك الرياضية فوراً</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+                
+                <!-- Package 1: Workout Plan Only -->
+                <div class="bg-brand-card border border-gray-800 rounded-3xl p-6 flex flex-col justify-between hover:border-gray-700 transition-all">
+                    <div class="space-y-5">
+                        <div>
+                            <span class="text-xs font-bold text-gray-400 bg-gray-800 px-3 py-1 rounded-full">تمارين فقط</span>
+                            <h3 class="text-xl font-black text-white mt-3">جدول تمريني</h3>
+                            <p class="text-gray-400 text-xs mt-1">برنامج تدريبي مخصص لمستواك في الجيم أو البيت</p>
+                        </div>
+
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-4xl font-black text-white">100</span>
+                            <span class="text-gray-400 font-bold">جنيه</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green text-xs"></i>
+                                <span>جدول تمارين مخصص</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green text-xs"></i>
+                                <span>شرح المجموعات والتكرارات</span>
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-500">
+                                <i class="fa-solid fa-xmark text-xs"></i>
+                                <span>بدون نظام غذائي</span>
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-500">
+                                <i class="fa-solid fa-xmark text-xs"></i>
+                                <span>بدون متابعة أسبوعية</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/201096363827?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D9%83%D8%A7%D8%A8%D8%AA%D9%86%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B4%D8%AA%D8%B1%D9%83%20%D9%81%D9%8A%20%D8%A8%D8%A7%D9%82%D8%A9%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AA%D9%85%D8%B1%D9%8A%D9%86%D9%8A%20(100%20%D8%AC%D9%86%D9%8A%D9%87)" target="_blank" rel="noopener noreferrer" class="mt-6 w-full py-3 bg-gray-800 hover:bg-brand-green hover:text-gray-950 text-white font-bold rounded-xl text-center flex items-center justify-center gap-2 transition-colors text-sm">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>اشترك الآن</span>
+                    </a>
+                </div>
+
+                <!-- Package 2: Diet Plan Only -->
+                <div class="bg-brand-card border border-gray-800 rounded-3xl p-6 flex flex-col justify-between hover:border-gray-700 transition-all">
+                    <div class="space-y-5">
+                        <div>
+                            <span class="text-xs font-bold text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">تغذية فقط</span>
+                            <h3 class="text-xl font-black text-white mt-3">نظام غذائي</h3>
+                            <p class="text-gray-400 text-xs mt-1">نظام دايت محسوب السعرات والماكروز لهدفك</p>
+                        </div>
+
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-4xl font-black text-white">100</span>
+                            <span class="text-gray-400 font-bold">جنيه</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green text-xs"></i>
+                                <span>نظام غذائي حسب هدفك</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green text-xs"></i>
+                                <span>حساب البروتين والكارب والدهون</span>
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-500">
+                                <i class="fa-solid fa-xmark text-xs"></i>
+                                <span>بدون جدول تمارين</span>
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-500">
+                                <i class="fa-solid fa-xmark text-xs"></i>
+                                <span>بدون متابعة أسبوعية</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/201096363827?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D9%83%D8%A7%D8%A8%D8%AA%D9%86%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B4%D8%AA%D8%B1%D9%83%20%D9%81%D9%8A%20%D8%A8%D8%A7%D9%82%D8%A9%20%D9%86%D8%B8%D8%A7%D9%85%20%D8%BA%D8%B0%D8%A7%D8%A6%D9%8A%20(100%20%D8%AC%D9%86%D9%8A%D9%87)" target="_blank" rel="noopener noreferrer" class="mt-6 w-full py-3 bg-gray-800 hover:bg-brand-green hover:text-gray-950 text-white font-bold rounded-xl text-center flex items-center justify-center gap-2 transition-colors text-sm">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>اشترك الآن</span>
+                    </a>
+                </div>
+
+                <!-- Package 3: Follow-up Only -->
+                <div class="bg-brand-card border border-gray-800 rounded-3xl p-6 flex flex-col justify-between hover:border-gray-700 transition-all">
+                    <div class="space-y-5">
+                        <div>
+                            <span class="text-xs font-bold text-emerald-400 bg-emerald-400/10 px-3 py-1 rounded-full border border-emerald-400/20">متابعة فقط</span>
+                            <h3 class="text-xl font-black text-white mt-3">متابعة شخصية</h3>
+                            <p class="text-gray-400 text-xs mt-1">متابعة لتطورك وتقييم الأداء وتصحيح التكنيك</p>
+                        </div>
+
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-4xl font-black text-white">200</span>
+                            <span class="text-gray-400 font-bold">جنيه</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green text-xs"></i>
+                                <span>متابعة أسبوعية دقيقة</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green text-xs"></i>
+                                <span>تصحيح أداء التمارين بالفيديو</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green text-xs"></i>
+                                <span>الإجابة على كافة الاستفسارات</span>
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-500">
+                                <i class="fa-solid fa-xmark text-xs"></i>
+                                <span>تعديل الجداول القائمة فقط</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/201096363827?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D9%83%D8%A7%D8%A8%D8%AA%D9%86%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B4%D8%AA%D8%B1%D9%83%20%D9%81%D9%8A%20%D8%A8%D8%A7%D9%82%D8%A9%20%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9%20(200%20%D8%AC%D9%86%D9%8A%D9%87)" target="_blank" rel="noopener noreferrer" class="mt-6 w-full py-3 bg-gray-800 hover:bg-brand-green hover:text-gray-950 text-white font-bold rounded-xl text-center flex items-center justify-center gap-2 transition-colors text-sm">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>اشترك الآن</span>
+                    </a>
+                </div>
+
+                <!-- Package 4: Complete Package (BEST VALUE) -->
+                <div class="bg-gradient-to-b from-gray-900 via-brand-card to-gray-950 border-2 border-brand-green rounded-3xl p-6 flex flex-col justify-between relative shadow-xl shadow-brand-green/15">
+                    <div class="absolute -top-3.5 right-1/2 translate-x-1/2 bg-brand-green text-gray-950 font-black text-[11px] px-3.5 py-1 rounded-full shadow whitespace-nowrap">
+                        الأكثر توفيراً 🔥
+                    </div>
+
+                    <div class="space-y-5">
+                        <div class="pt-2">
+                            <span class="text-xs font-bold text-brand-green bg-brand-green/10 px-3 py-1 rounded-full border border-brand-green/20">شاملة ومكثفة</span>
+                            <h3 class="text-xl font-black text-white mt-3">الباقة الكاملة</h3>
+                            <p class="text-gray-400 text-xs mt-1">تمارين + تغذية + متابعة مستمرة للوصول لنتائج حقيقية</p>
+                        </div>
+
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-4xl font-black text-brand-green">350</span>
+                            <span class="text-gray-400 font-bold">جنيه</span>
+                            <span class="text-xs text-gray-500 line-through">400 جنيه</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green text-xs"></i>
+                                <span>جدول تمريني مخصص 100%</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green text-xs"></i>
+                                <span>نظام غذائي محسوب الماكروز</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green text-xs"></i>
+                                <span>متابعة شخصية وتعديل مستمر</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green text-xs"></i>
+                                <span>تصحيح الأداء وتواصل مباشر 24/7</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/201096363827?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D9%83%D8%A7%D8%A8%D8%AA%D9%86%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B4%D8%AA%D8%B1%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%84%D8%A9%20(350%20%D8%AC%D9%86%D9%8A%D9%87)" target="_blank" rel="noopener noreferrer" class="mt-6 w-full py-3.5 bg-brand-green hover:bg-brand-greenHover text-gray-950 font-black rounded-xl text-center flex items-center justify-center gap-2 transition-all shadow-md shadow-brand-green/25 text-sm">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>اشترك الآن</span>
+                    </a>
+                </div>
+
+                <!-- Package 2: Diet Plan Only -->
+                <div class="bg-brand-card border border-gray-800 rounded-3xl p-6 flex flex-col justify-between hover:border-gray-700 transition-all">
+                    <div class="space-y-5">
+                        <div>
+                            <span class="text-xs font-bold text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">تغذية فقط</span>
+                            <h3 class="text-xl font-black text-white mt-3">نظام غذائي</h3>
+                            <p class="text-gray-400 text-xs mt-1">نظام دايت محسوب السعرات والماكروز لهدفك</p>
+                        </div>
+
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-4xl font-black text-white">100</span>
+                            <span class="text-gray-400 font-bold">جنيه</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green text-xs"></i>
+                                <span>نظام غذائي حسب هدفك</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green text-xs"></i>
+                                <span>حساب البروتين والكارب والدهون</span>
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-500">
+                                <i class="fa-solid fa-xmark text-xs"></i>
+                                <span>بدون جدول تمارين</span>
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-500">
+                                <i class="fa-solid fa-xmark text-xs"></i>
+                                <span>بدون متابعة أسبوعية</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/201096363827?text=أهلاً%20كوتش،%20حابب%20أشترك%20في%20باقة%20النظام%20الغذائي%20بـ%20100%20جنيه" target="_blank" rel="noopener noreferrer" class="mt-6 w-full py-3 bg-gray-800 hover:bg-brand-green hover:text-gray-950 text-white font-bold rounded-xl text-center flex items-center justify-center gap-2 transition-colors text-sm">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>اشترك الآن</span>
+                    </a>
+                </div>
+
+                <!-- Package 3: Follow-up Only -->
+                <div class="bg-brand-card border border-gray-800 rounded-3xl p-6 flex flex-col justify-between hover:border-gray-700 transition-all">
+                    <div class="space-y-5">
+                        <div>
+                            <span class="text-xs font-bold text-emerald-400 bg-emerald-400/10 px-3 py-1 rounded-full border border-emerald-400/20">متابعة فقط</span>
+                            <h3 class="text-xl font-black text-white mt-3">متابعة شخصية</h3>
+                            <p class="text-gray-400 text-xs mt-1">متابعة لتطورك وتقييم الأداء وتصحيح التكنيك</p>
+                        </div>
+
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-4xl font-black text-white">200</span>
+                            <span class="text-gray-400 font-bold">جنيه</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green text-xs"></i>
+                                <span>متابعة أسبوعية دقيقة</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green text-xs"></i>
+                                <span>تصحيح أداء التمارين بالفيديو</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green text-xs"></i>
+                                <span>الإجابة على كافة الاستفسارات</span>
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-500">
+                                <i class="fa-solid fa-xmark text-xs"></i>
+                                <span>تعديل الجداول القائمة فقط</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/201096363827?text=أهلاً%20كوتش،%20حابب%20أشترك%20في%20باقة%20المتابعة%20بـ%20200%20جنيه" target="_blank" rel="noopener noreferrer" class="mt-6 w-full py-3 bg-gray-800 hover:bg-brand-green hover:text-gray-950 text-white font-bold rounded-xl text-center flex items-center justify-center gap-2 transition-colors text-sm">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>اشترك الآن</span>
+                    </a>
+                </div>
+
+                <!-- Package 4: Complete Package (BEST VALUE) -->
+                <div class="bg-gradient-to-b from-gray-900 via-brand-card to-gray-950 border-2 border-brand-green rounded-3xl p-6 flex flex-col justify-between relative shadow-xl shadow-brand-green/15">
+                    <div class="absolute -top-3.5 right-1/2 translate-x-1/2 bg-brand-green text-gray-950 font-black text-[11px] px-3.5 py-1 rounded-full shadow whitespace-nowrap">
+                        الأكثر توفيراً 🔥
+                    </div>
+
+                    <div class="space-y-5">
+                        <div class="pt-2">
+                            <span class="text-xs font-bold text-brand-green bg-brand-green/10 px-3 py-1 rounded-full border border-brand-green/20">شاملة ومكثفة</span>
+                            <h3 class="text-xl font-black text-white mt-3">الباقة الكاملة</h3>
+                            <p class="text-gray-400 text-xs mt-1">تمارين + تغذية + متابعة مستمرة للوصول لنتائج حقيقية</p>
+                        </div>
+
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-4xl font-black text-brand-green">350</span>
+                            <span class="text-gray-400 font-bold">جنيه</span>
+                            <span class="text-xs text-gray-500 line-through">400 جنيه</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green text-xs"></i>
+                                <span>جدول تمريني مخصص 100%</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green text-xs"></i>
+                                <span>نظام غذائي محسوب الماكروز</span>
+                            </li>
+                    <a href="https://wa.me/201096363827?text=أهلاً%20كوتش،%20حابب%20أشترك%20في%20الباقة%20الكاملة%20بـ%20350%20جنيه" target="_blank" rel="noopener noreferrer" class="mt-6 w-full py-3.5 bg-brand-green hover:bg-brand-greenHover text-gray-950 font-black rounded-xl text-center flex items-center justify-center gap-2 transition-all shadow-md shadow-brand-green/25 text-sm">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>اشترك الآن</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-gray-800/80 py-10 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+            <div class="flex items-center justify-center gap-2">
+                <div class="w-8 h-8 rounded-xl bg-brand-green flex items-center justify-center text-gray-950 font-black text-sm">
+                    <i class="fa-solid fa-dumbbell -rotate-45"></i>
+                </div>
+                <span class="text-xl font-black text-white">مُعَضِّلْ | Mo'adlal</span>
+            </div>
+            <p class="text-gray-300 text-sm font-bold">
+                للاستفسار والاشتراك واتساب: 
+                <a href="https://wa.me/201096363827" target="_blank" rel="noopener noreferrer" class="text-brand-green hover:underline" dir="ltr">01096363827</a>
+            </p>
+            <p class="text-gray-500 text-xs">جميع الحقوق محفوظة &copy; 2026 منصة معضل للتدريب الأونلاين</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/201096363827?text=أهلاً%20كوتش،%20عندي%20استفسار%20عن%20باقات%20معضل" target="_blank" rel="noopener noreferrer" aria-label="تواصل واتساب" class="fixed bottom-5 left-5 z-50 flex items-center gap-2.5 bg-[#25D366] hover:bg-[#1ebe5d] text-gray-950 font-black px-4 py-3 rounded-full shadow-2xl shadow-[#25D366]/30 transition-transform hover:scale-105">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span class="hidden sm:inline text-sm">تواصل واتساب</span>
+    </a>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Calorie & Macros Calculator Logic (Mifflin-St Jeor Equation)
+        const calcForm = document.getElementById('calc-form');
+        const calcResult = document.getElementById('calc-result');
+
+        calcForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            try {
+                const gender = document.getElementById('gender').value;
+                const age = parseFloat(document.getElementById('age').value);
+                const weight = parseFloat(document.getElementById('weight').value);
+                const height = parseFloat(document.getElementById('height').value);
+                const activity = parseFloat(document.getElementById('activity').value);
+                const goal = document.getElementById('goal').value;
+
+                // Basal Metabolic Rate (BMR)
+                let bmr = (10 * weight) + (6.25 * height) - (5 * age);
+                bmr += (gender === 'male') ? 5 : -161;
+
+                // Total Daily Energy Expenditure (TDEE)
+                let tdee = bmr * activity;
+
+                // Adjust based on goal
+                if (goal === 'cut') tdee -= 500;
+                if (goal === 'bulk') tdee += 400;
+
+                const finalCalories = Math.max(1200, Math.round(tdee));
+
+                // Macros Calculation (High Protein for Muscle Building/Preservation)
+                const proteinGrams = Math.round(weight * 2); // 2g per kg
+                const fatsGrams = Math.round((finalCalories * 0.25) / 9); // 25% of calories
+                const remainingCals = finalCalories - ((proteinGrams * 4) + (fatsGrams * 9));
+                const carbsGrams = Math.max(50, Math.round(remainingCals / 4));
+
+                // Update UI
+                document.getElementById('res-calories').textContent = finalCalories;
+                document.getElementById('res-protein').textContent = proteinGrams + 'g';
+                document.getElementById('res-carbs').textContent = carbsGrams + 'g';
+                document.getElementById('res-fats').textContent = fatsGrams + 'g';
+
+                calcResult.classList.remove('hidden');
+                calcResult.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } catch (err) {
+                console.error('Calculation error:', err);
+            }
+        });
+    </script>
+</body>
+</html>
